@@ -1,8 +1,8 @@
 {
     "identifiers": {
-        "androidBundleId": "com.enigma.movies",
-        "iosBundleId": "com.enigma.movies",
-        "webAppDomain": "app.enigma.com",
+        "androidBundleId": "com.cinemamax.movies",
+        "iosBundleId": "com.cinemamax.movies",
+        "webAppDomain": "app.cinemamax.com",
         "deepLinkScheme": "enigma"
     },
     "api": {
@@ -13,8 +13,8 @@
         "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
-        "appName": "Enigma",
-        "companyName": "Enigma Studios",
+        "appName": "CinemaMax",
+        "companyName": "CinemaMax Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
         "logoUrl": "logo.png",
@@ -26,6 +26,6 @@
     },
     "stores": {
         "iosAppStoreId": "1234567890",
-        "androidPlayStoreId": "com.enigma.movies"
+        "androidPlayStoreId": "com.cinemamax.movies"
     }
 }
