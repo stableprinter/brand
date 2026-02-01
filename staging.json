@@ -1,8 +1,8 @@
 {
     "identifiers": {
-        "androidBundleId": "com.cinemamax.staging.movies",
-        "iosBundleId": "com.cinemamax.staging.movies",
-        "webAppDomain": "app.cinemamax.staging.com",
+        "androidBundleId": "com.enigma.staging.movies",
+        "iosBundleId": "com.enigma.staging.movies",
+        "webAppDomain": "app.enigma.staging.com",
         "deepLinkScheme": "enigma"
     },
     "api": {
@@ -13,8 +13,8 @@
         "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
-        "appName": "CinemaMax-Staging",
-        "companyName": "CinemaMax Studios",
+        "appName": "Enigma-Staging",
+        "companyName": "Enigma Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
         "logoUrl": "logo.png",
@@ -26,6 +26,6 @@
     },
     "stores": {
         "iosAppStoreId": "1234567890",
-        "androidPlayStoreId": "com.cinemamax.staging.movies"
+        "androidPlayStoreId": "com.enigma.staging.movies"
     }
 }
