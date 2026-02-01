@@ -13,7 +13,7 @@
         "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
-        "appName": "CinemaMax Staging",
+        "appName": "CinemaMax-Staging",
         "companyName": "CinemaMax Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
