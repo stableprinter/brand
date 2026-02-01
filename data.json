@@ -1,0 +1,30 @@
+{
+    "identifiers": {
+        "androidBundleId": "com.cineverse.movies",
+        "iosBundleId": "com.cineverse.movies",
+        "webAppDomain": "app.cineverse.com",
+        "deepLinkScheme": "cineverse"
+    },
+    "api": {
+        "apiBaseUrl": "https://api.cineverse.com/v1",
+        "apiVersion": "1",
+        "websocketUrl": "wss://realtime.cineverse.com",
+        "cdnBaseUrl": "https://cdn.cineverse.com"
+    },
+    "branding": {
+        "appName": "Cineverse",
+        "companyName": "Cineverse Studios",
+        "primaryColor": "#B91C1C",
+        "accentColor": "#D97706",
+        "logoUrl": "logo.png",
+        "logoDarkUrl": "logo-dark.png",
+        "supportEmail": "support@cineverse.com",
+        "supportUrl": "https://help.cineverse.com",
+        "privacyPolicyUrl": "https://cineverse.com/privacy",
+        "termsUrl": "https://cineverse.com/terms"
+    },
+    "stores": {
+        "iosAppStoreId": "1234567890",
+        "androidPlayStoreId": "com.cineverse.movies"
+    }
+}
