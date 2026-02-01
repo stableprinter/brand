@@ -1,9 +1,9 @@
 {
     "identifiers": {
-        "androidBundleId": "com.cinemamax.movies",
-        "iosBundleId": "com.cinemamax.movies",
-        "webAppDomain": "app.cinemamax.com",
-        "deepLinkScheme": "enigma"
+        "androidBundleId": "com.cineverse.movies",
+        "iosBundleId": "com.cineverse.movies",
+        "webAppDomain": "app.cineverse.com",
+        "deepLinkScheme": "cineverse"
     },
     "api": {
         "apiBaseUrl": "https://api.themoviedb.org/3",
@@ -13,8 +13,8 @@
         "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
-        "appName": "CinemaMax",
-        "companyName": "CinemaMax Studios",
+        "appName": "Cineverse",
+        "companyName": "Cineverse Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
         "logoUrl": "logo.png",
@@ -26,6 +26,6 @@
     },
     "stores": {
         "iosAppStoreId": "1234567890",
-        "androidPlayStoreId": "com.cinemamax.movies"
+        "androidPlayStoreId": "com.cineverse.movies"
     }
 }
