@@ -1,9 +1,9 @@
 {
     "identifiers": {
-        "androidBundleId": "com.cineverse.movies",
-        "iosBundleId": "com.cineverse.movies",
-        "webAppDomain": "app.cineverse.com",
-        "deepLinkScheme": "cineverse"
+        "androidBundleId": "com.enigma.movies",
+        "iosBundleId": "com.enigma.movies",
+        "webAppDomain": "app.enigma.com",
+        "deepLinkScheme": "enigma"
     },
     "api": {
         "apiBaseUrl": "https://api.cineverse.com/v1",
@@ -12,19 +12,19 @@
         "cdnBaseUrl": "https://cdn.cineverse.com"
     },
     "branding": {
-        "appName": "Cineverse",
-        "companyName": "Cineverse Studios",
+        "appName": "Enigma",
+        "companyName": "Enigma Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
         "logoUrl": "logo.png",
         "logoDarkUrl": "logo-dark.png",
-        "supportEmail": "support@cineverse.com",
-        "supportUrl": "https://help.cineverse.com",
-        "privacyPolicyUrl": "https://cineverse.com/privacy",
-        "termsUrl": "https://cineverse.com/terms"
+        "supportEmail": "support@enigma.com",
+        "supportUrl": "https://help.enigma.com",
+        "privacyPolicyUrl": "https://enigma.com/privacy",
+        "termsUrl": "https://enigma.com/terms"
     },
     "stores": {
         "iosAppStoreId": "1234567890",
-        "androidPlayStoreId": "com.cineverse.movies"
+        "androidPlayStoreId": "com.enigma.movies"
     }
 }
