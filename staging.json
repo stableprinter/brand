@@ -1,8 +1,8 @@
 {
     "identifiers": {
-        "androidBundleId": "com.cinemamax.movies",
-        "iosBundleId": "com.cinemamax.movies",
-        "webAppDomain": "app.cinemamax.com",
+        "androidBundleId": "com.cinemamax.staging.movies",
+        "iosBundleId": "com.cinemamax.staging.movies",
+        "webAppDomain": "app.cinemamax.staging.com",
         "deepLinkScheme": "enigma"
     },
     "api": {
@@ -13,7 +13,7 @@
         "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
-        "appName": "CinemaMax",
+        "appName": "CinemaMax-Staging",
         "companyName": "CinemaMax Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
@@ -26,6 +26,6 @@
     },
     "stores": {
         "iosAppStoreId": "1234567890",
-        "androidPlayStoreId": "com.cinemamax.movies"
+        "androidPlayStoreId": "com.cinemamax.staging.movies"
     }
 }
