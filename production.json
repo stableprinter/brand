@@ -6,10 +6,11 @@
         "deepLinkScheme": "enigma"
     },
     "api": {
-        "apiBaseUrl": "https://api.cineverse.com/v1",
+        "apiBaseUrl": "https://api.themoviedb.org/3",
         "apiVersion": "1",
         "websocketUrl": "wss://realtime.cineverse.com",
-        "cdnBaseUrl": "https://cdn.cineverse.com"
+        "cdnBaseUrl": "https://cdn.cineverse.com",
+        "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
         "appName": "Enigma",
