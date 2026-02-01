@@ -9,7 +9,7 @@
         "apiBaseUrl": "https://api.cineverse.com/v1",
         "apiVersion": "1",
         "websocketUrl": "wss://realtime.cineverse.com",
-        "cdnBaseUrl": "https://cdn.cineverse.com"
+        "imageBaseUrl": "https://image.tmdb.org/t/p/original"
     },
     "branding": {
         "appName": "Cineverse",
