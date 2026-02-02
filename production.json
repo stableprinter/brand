@@ -27,5 +27,18 @@
     "stores": {
         "iosAppStoreId": "1234567890",
         "androidPlayStoreId": "com.enigma.movies"
+    },
+    "signingKeys": {
+        "android": {
+            "keystore_file_id": "prod_enigma_android_keystore",
+            "keystoreAlias": "prod_enigma_release",
+            "keystorePassword_id": "prod_enigma_android_keystore_password",
+            "keyPassword_id": "prod_enigma_android_key_password"
+        },
+        "ios": {
+            "ios_p12_file_id": "prod_enigma_p12",
+            "ios_p12_password_id": "prod_enigma_p12_password",
+            "ios_mobileprovision_file_id": "prod_enigma_mobileprovision"
+        }
     }
 }
