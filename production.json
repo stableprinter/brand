@@ -27,5 +27,18 @@
     "stores": {
         "iosAppStoreId": "1234567890",
         "androidPlayStoreId": "com.cineverse.movies"
+    },
+    "signingKeys": {
+        "android": {
+            "keystore_file_id": "prod_cineverse_android_keystore",
+            "keystoreAlias": "prod_cineverse_release",
+            "keystorePassword_id": "prod_cineverse_android_keystore_password",
+            "keyPassword_id": "prod_cineverse_android_key_password"
+        },
+        "ios": {
+            "ios_p12_file_id": "prod_cineverse_p12",
+            "ios_p12_password_id": "prod_cineverse_p12_password",
+            "ios_mobileprovision_file_id": "prod_cineverse_mobileprovision"
+        }
     }
 }

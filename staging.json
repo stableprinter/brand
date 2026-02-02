@@ -27,5 +27,18 @@
     "stores": {
         "iosAppStoreId": "1234567890",
         "androidPlayStoreId": "com.cineverse.staging.movies"
+    },
+    "signingKeys": {
+        "android": {
+            "keystore_file_id": "staging_cineverse_android_keystore",
+            "keystoreAlias": "staging_cineverse_release",
+            "keystorePassword_id": "staging_cineverse_android_keystore_password",
+            "keyPassword_id": "staging_cineverse_android_key_password"
+        },
+        "ios": {
+            "ios_p12_file_id": "staging_cineverse_p12",
+            "ios_p12_password_id": "staging_cineverse_p12_password",
+            "ios_mobileprovision_file_id": "staging_cineverse_mobileprovision"
+        }
     }
 }
