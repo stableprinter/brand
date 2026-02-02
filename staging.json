@@ -27,5 +27,18 @@
     "stores": {
         "iosAppStoreId": "1234567890",
         "androidPlayStoreId": "com.cinemamax.staging.movies"
+    },
+    "signingKeys": {
+        "android": {
+            "keystore_file_id": "staging_cinemamax_android_keystore",
+            "keystoreAlias": "staging_cinemamax_release",
+            "keystorePassword_id": "staging_cinemamax_android_keystore_password",
+            "keyPassword_id": "staging_cinemamax_android_key_password"
+        },
+        "ios": {
+            "ios_p12_file_id": "staging_cinemamax_p12",
+            "ios_p12_password_id": "staging_cinemamax_p12_password",
+            "ios_mobileprovision_file_id": "staging_cinemamax_mobileprovision"
+        }
     }
 }
