@@ -29,16 +29,33 @@
         "androidPlayStoreId": "com.cinemamax.staging.movies"
     },
     "signingKeys": {
-        "android": {
-            "keystore_file_id": "staging_cinemamax_android_keystore",
-            "keystoreAlias": "staging_cinemamax_release",
-            "keystorePassword_id": "staging_cinemamax_android_keystore_password",
-            "keyPassword_id": "staging_cinemamax_android_key_password"
-        },
         "ios": {
-            "ios_p12_file_id": "staging_cinemamax_p12",
-            "ios_p12_password_id": "staging_cinemamax_p12_password",
-            "ios_mobileprovision_file_id": "staging_cinemamax_mobileprovision"
+            "p12": {
+                "fileCredentialId": "prod_cinemamax_p12",
+                "passwordCredentialId": "prod_cinemamax_p12_password"
+            },
+            "mobileprovision": {
+                "fileCredentialId": "prod_cinemamax_mobileprovision",
+                "profileName": "Cinemamax AdHoc"
+            },
+            "codesign": {
+                "teamId": "PHVDJKKN67",
+                "signingIdentity": "Apple Distribution",
+                "signingStyle": "Manual"
+            },
+            "export": {
+                "method": "ad-hoc",
+                "compileBitcode": false,
+                "stripSwiftSymbols": true
+            }
+        },
+        "android": {
+            "keystore": {
+                "fileCredentialId": "cinemamax_android_keystore"
+            },
+            "alias": "cinemamax_release",
+            "keystorePasswordCredentialId": "cinemamax_keystore_password",
+            "keyPasswordCredentialId": "cinemamax_key_password"
         }
     }
 }
