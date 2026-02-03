@@ -3,7 +3,7 @@
         "androidBundleId": "com.cineverse.staging.movies",
         "iosBundleId": "com.cineverse.staging.movies",
         "webAppDomain": "app.cineverse.staging.com",
-        "deepLinkScheme": "enigma"
+        "deepLinkScheme": "cineverse"
     },
     "api": {
         "apiBaseUrl": "https://api.themoviedb.org/3",
@@ -19,26 +19,43 @@
         "accentColor": "#D97706",
         "logoUrl": "logo.png",
         "logoDarkUrl": "logo-dark.png",
-        "supportEmail": "support@enigma.com",
-        "supportUrl": "https://help.enigma.com",
-        "privacyPolicyUrl": "https://enigma.com/privacy",
-        "termsUrl": "https://enigma.com/terms"
+        "supportEmail": "support@cineverse.com",
+        "supportUrl": "https://help.cineverse.com",
+        "privacyPolicyUrl": "https://cineverse.com/privacy",
+        "termsUrl": "https://cineverse.com/terms"
     },
     "stores": {
         "iosAppStoreId": "1234567890",
         "androidPlayStoreId": "com.cineverse.staging.movies"
     },
     "signingKeys": {
-        "android": {
-            "keystore_file_id": "staging_cineverse_android_keystore",
-            "keystoreAlias": "staging_cineverse_release",
-            "keystorePassword_id": "staging_cineverse_android_keystore_password",
-            "keyPassword_id": "staging_cineverse_android_key_password"
-        },
         "ios": {
-            "ios_p12_file_id": "staging_cineverse_p12",
-            "ios_p12_password_id": "staging_cineverse_p12_password",
-            "ios_mobileprovision_file_id": "staging_cineverse_mobileprovision"
+            "p12": {
+                "fileCredentialId": "prod_cineverse_p12",
+                "passwordCredentialId": "prod_cineverse_p12_password"
+            },
+            "mobileprovision": {
+                "fileCredentialId": "prod_cineverse_mobileprovision",
+                "profileName": "Cineverse AdHoc"
+            },
+            "codesign": {
+                "teamId": "PHVDJKKN67",
+                "signingIdentity": "Apple Distribution",
+                "signingStyle": "Manual"
+            },
+            "export": {
+                "method": "ad-hoc",
+                "compileBitcode": false,
+                "stripSwiftSymbols": true
+            }
+        },
+        "android": {
+            "keystore": {
+                "fileCredentialId": "cineverse_android_keystore"
+            },
+            "alias": "cineverse_release",
+            "keystorePasswordCredentialId": "cineverse_keystore_password",
+            "keyPasswordCredentialId": "cineverse_key_password"
         }
     }
 }

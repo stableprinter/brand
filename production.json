@@ -17,28 +17,45 @@
         "companyName": "Cineverse Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
-        "logoUrl": "logo.png",
-        "logoDarkUrl": "logo-dark.png",
-        "supportEmail": "support@enigma.com",
-        "supportUrl": "https://help.enigma.com",
-        "privacyPolicyUrl": "https://enigma.com/privacy",
-        "termsUrl": "https://enigma.com/terms"
+        "logo": "logo.png",
+        "logoDark": "logo-dark.png",
+        "supportEmail": "support@cineverse.com",
+        "supportUrl": "https://help.cineverse.com",
+        "privacyPolicyUrl": "https://cineverse.com/privacy",
+        "termsUrl": "https://cineverse.com/terms"
     },
     "stores": {
         "iosAppStoreId": "1234567890",
         "androidPlayStoreId": "com.cineverse.movies"
     },
     "signingKeys": {
-        "android": {
-            "keystore_file_id": "prod_cineverse_android_keystore",
-            "keystoreAlias": "prod_cineverse_release",
-            "keystorePassword_id": "prod_cineverse_android_keystore_password",
-            "keyPassword_id": "prod_cineverse_android_key_password"
-        },
         "ios": {
-            "ios_p12_file_id": "prod_cineverse_p12",
-            "ios_p12_password_id": "prod_cineverse_p12_password",
-            "ios_mobileprovision_file_id": "prod_cineverse_mobileprovision"
+            "p12": {
+                "fileCredentialId": "prod_cineverse_p12",
+                "passwordCredentialId": "prod_cineverse_p12_password"
+            },
+            "mobileprovision": {
+                "fileCredentialId": "prod_cineverse_mobileprovision",
+                "profileName": "Cineverse AdHoc"
+            },
+            "codesign": {
+                "teamId": "PHVDJKKN67",
+                "signingIdentity": "Apple Distribution",
+                "signingStyle": "Manual"
+            },
+            "export": {
+                "method": "ad-hoc",
+                "compileBitcode": false,
+                "stripSwiftSymbols": true
+            }
+        },
+        "android": {
+            "keystore": {
+                "fileCredentialId": "cineverse_android_keystore"
+            },
+            "alias": "cineverse_release",
+            "keystorePasswordCredentialId": "cineverse_keystore_password",
+            "keyPasswordCredentialId": "cineverse_key_password"
         }
     }
 }
