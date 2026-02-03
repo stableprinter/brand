@@ -29,16 +29,33 @@
         "androidPlayStoreId": "com.enigma.staging.movies"
     },
     "signingKeys": {
-        "android": {
-            "keystore_file_id": "staging_enigma_android_keystore",
-            "keystoreAlias": "staging_enigma_release",
-            "keystorePassword_id": "staging_enigma_android_keystore_password",
-            "keyPassword_id": "staging_enigma_android_key_password"
-        },
         "ios": {
-            "ios_p12_file_id": "staging_enigma_p12",
-            "ios_p12_password_id": "staging_enigma_p12_password",
-            "ios_mobileprovision_file_id": "staging_enigma_mobileprovision"
+            "p12": {
+                "fileCredentialId": "prod_enigma_p12",
+                "passwordCredentialId": "prod_enigma_p12_password"
+            },
+            "mobileprovision": {
+                "fileCredentialId": "prod_enigma_mobileprovision",
+                "profileName": "Enigma AdHoc"
+            },
+            "codesign": {
+                "teamId": "PHVDJKKN67",
+                "signingIdentity": "Apple Distribution",
+                "signingStyle": "Manual"
+            },
+            "export": {
+                "method": "ad-hoc",
+                "compileBitcode": false,
+                "stripSwiftSymbols": true
+            }
+        },
+        "android": {
+            "keystore": {
+                "fileCredentialId": "enigma_android_keystore"
+            },
+            "alias": "enigma_release",
+            "keystorePasswordCredentialId": "enigma_keystore_password",
+            "keyPasswordCredentialId": "enigma_key_password"
         }
     }
 }
