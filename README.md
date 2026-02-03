@@ -14,30 +14,40 @@ This repository serves as the single source of truth for:
 ```
 brand/
 ├── README.md
-├── staging.json          # Staging environment configuration
-├── production.json       # Production environment configuration
+├── staging.json              # Staging environment configuration
+├── production.json           # Production environment configuration
 └── asset/
-    ├── staging/          # Staging environment assets
-    │   ├── appicon/      # App icons (iOS & Android)
-    │   ├── fonts/        # Custom fonts
-    │   └── splashscreen/ # Splash screen assets
-    └── production/       # Production environment assets
-        ├── appicon/      # App icons (iOS & Android)
-        ├── fonts/        # Custom fonts
-        └── splashscreen/ # Splash screen assets
+    ├── staging/              # Staging environment assets
+    │   ├── appicon/
+    │   │   ├── android/
+    │   │   │   ├── mipmap-hdpi/     # ic_launcher.png
+    │   │   │   ├── mipmap-mdpi/
+    │   │   │   ├── mipmap-xhdpi/
+    │   │   │   ├── mipmap-xxhdpi/
+    │   │   │   └── mipmap-xxxhdpi/
+    │   │   ├── Assets.xcassets/
+    │   │   │   └── AppIcon.appiconset/   # iOS app icons
+    │   │   ├── appstore.png              # App Store icon (1024×1024)
+    │   │   └── playstore.png             # Play Store icon (512×512)
+    │   ├── fonts/
+    │   └── splashscreen/
+    │       └── splashscreen.png
+    └── production/           # Production environment assets
+        ├── appicon/
+        │   ├── android/
+        │   │   ├── mipmap-hdpi/
+        │   │   ├── mipmap-mdpi/
+        │   │   ├── mipmap-xhdpi/
+        │   │   ├── mipmap-xxhdpi/
+        │   │   └── mipmap-xxxhdpi/
+        │   ├── Assets.xcassets/
+        │   │   └── AppIcon.appiconset/
+        │   ├── appstore.png
+        │   └── playstore.png
+        ├── fonts/
+        └── splashscreen/
+            └── splashscreen.png
 ```
-
-## Configuration Files
-
-### JSON Configuration Structure
-
-Each JSON file (`staging.json`, `production.json`) contains:
-
-- **identifiers**: Bundle IDs, domains, and deep link schemes
-- **api**: API endpoints, WebSocket URLs, CDN configurations
-- **branding**: App name, company name, colors, logos, support information
-- **stores**: App Store and Play Store identifiers
-- **signingKeys**: iOS and Android signing credentials and certificates
 
 ## Adding a New Company/Client App
 
@@ -58,9 +68,8 @@ git checkout -b acme-corp
 
 ### Step 2: Update Configuration Files
 
-1. **Rename or create JSON files** to match the company's naming convention:
-   - `staging.json` → `<company-name>-staging.json` (or keep as `staging.json` if branch-specific)
-   - `production.json` → `<company-name>-production.json` (or keep as `production.json` if branch-specific)
+1. **Edit or create JSON configuration files** to use company-specific values:
+   - Use or modify `staging.json` and `production.json` with details unique to the company.
 
 2. **Update the JSON content** with company-specific values:
    - Bundle IDs
@@ -72,24 +81,17 @@ git checkout -b acme-corp
 
 ### Step 3: Add Company Assets
 
-Place company-specific assets in the appropriate directories:
+Place company-specific assets in the appropriate directories under `asset/<environment>/`:
 
-- **App Icons**: `asset/<environment>/appicon/`
-  - iOS: `Assets.xcassets/AppIcon.appiconset/`
-  - Android: `android/mipmap-*/`
-  - Store icons: `appstore.png`, `playstore.png`
+- **App Icons** (`asset/<environment>/appicon/`):
+  - **iOS**: `Assets.xcassets/AppIcon.appiconset/` — include all required sizes (29, 40, 57, 58, 60, 80, 87, 1024, etc.)
+  - **Android**: `android/mipmap-*/` — `ic_launcher.png` in each density folder (mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi)
+  - **Store icons**: `appstore.png` (1024×1024), `playstore.png` (512×512)
 
-- **Fonts**: `asset/<environment>/fonts/`
+- **Fonts**: `asset/<environment>/fonts/` — TTF/OTF font files
 
-- **Splash Screens**: `asset/<environment>/splashscreen/`
+- **Splash Screens**: `asset/<environment>/splashscreen/splashscreen.png`
 
-### Step 4: Commit and Push
-
-```bash
-git add .
-git commit -m "Add branding configuration for <company-name>"
-git push origin <company-name>
-```
 
 ## Jenkins Integration
 
@@ -105,23 +107,13 @@ The Jenkins build pipeline uses this repository to build client-specific applica
 When Jenkins builds a new app:
 
 1. Checks out the repository branch matching the company name
-2. **Performs health checks**: Validates all required fields in JSON files and verifies all asset files exist
-3. Reads the JSON configuration file (staging.json or production.json)
-4. Copies assets from `asset/<environment>/` to the app project
-5. Applies configuration values (bundle IDs, colors, API endpoints, etc.)
-6. Uses signing keys referenced in the configuration
-7. Builds and packages the app with the company's branding
+2. Reads the JSON configuration file (staging.json or production.json)
+3. Copies assets from `asset/<environment>/` to the app project
+4. Applies configuration values (bundle IDs, colors, API endpoints, etc.)
+5. Uses signing keys referenced in the configuration
+6. Builds and packages the app with the company's branding
 
-**Note**: If health checks fail (missing fields or files), Jenkins will automatically ping the repository owner and halt the build process.
 
-## Best Practices
-
-- **Branch Naming**: Use clear, consistent naming (e.g., `acme-corp`, `tech-solutions-inc`)
-- **Asset Organization**: Keep assets organized by environment (staging/production)
-- **Complete Configuration**: All fields in JSON files must be populated - there are no optional fields
-- **Complete Assets**: Ensure all required asset files are present in the appropriate directories
-- **Version Control**: Commit all assets and configurations to the repository
-- **Documentation**: Update this README if adding new configuration fields or changing the structure
 
 ## Health Checks & Validation
 
