@@ -1,9 +1,9 @@
 {
     "identifiers": {
-        "androidBundleId": "com.enigma.movies",
-        "iosBundleId": "com.enigma.movies",
-        "webAppDomain": "app.enigma.com",
-        "deepLinkScheme": "enigma"
+        "androidBundleId": "com.cineverse.movies",
+        "iosBundleId": "com.cineverse.movies",
+        "webAppDomain": "app.cineverse.com",
+        "deepLinkScheme": "cineverse"
     },
     "api": {
         "apiBaseUrl": "https://api.themoviedb.org/3",
@@ -13,30 +13,30 @@
         "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
-        "appName": "Enigma-Production",
-        "companyName": "Enigma Studios",
+        "appName": "Cineverse",
+        "companyName": "Cineverse Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
         "logo": "logo.png",
         "logoDark": "logo-dark.png",
-        "supportEmail": "support@enigma.com",
-        "supportUrl": "https://help.enigma.com",
-        "privacyPolicyUrl": "https://enigma.com/privacy",
-        "termsUrl": "https://enigma.com/terms"
+        "supportEmail": "support@cineverse.com",
+        "supportUrl": "https://help.cineverse.com",
+        "privacyPolicyUrl": "https://cineverse.com/privacy",
+        "termsUrl": "https://cineverse.com/terms"
     },
     "stores": {
         "iosAppStoreId": "1234567890",
-        "androidPlayStoreId": "com.enigma.movies"
+        "androidPlayStoreId": "com.cineverse.movies"
     },
     "signingKeys": {
         "ios": {
             "p12": {
-                "fileCredentialId": "prod_enigma_p12",
-                "passwordCredentialId": "prod_enigma_p12_password"
+                "fileCredentialId": "prod_cineverse_p12",
+                "passwordCredentialId": "prod_cineverse_p12_password"
             },
             "mobileprovision": {
-                "fileCredentialId": "prod_enigma_mobileprovision",
-                "profileName": "Enigma AdHoc"
+                "fileCredentialId": "prod_cineverse_mobileprovision",
+                "profileName": "Cineverse AdHoc"
             },
             "codesign": {
                 "teamId": "PHVDJKKN67",
@@ -51,11 +51,11 @@
         },
         "android": {
             "keystore": {
-                "fileCredentialId": "enigma_android_keystore"
+                "fileCredentialId": "cineverse_android_keystore"
             },
-            "alias": "enigma_release",
-            "keystorePasswordCredentialId": "enigma_keystore_password",
-            "keyPasswordCredentialId": "enigma_key_password"
+            "alias": "cineverse_release",
+            "keystorePasswordCredentialId": "cineverse_keystore_password",
+            "keyPasswordCredentialId": "cineverse_key_password"
         }
     }
 }
