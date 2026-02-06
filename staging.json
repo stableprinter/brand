@@ -1,42 +1,42 @@
 {
     "identifiers": {
-        "androidBundleId": "com.cineverse.staging.movies",
-        "iosBundleId": "com.cineverse.staging.movies",
-        "webAppDomain": "app.cineverse.staging.com",
-        "deepLinkScheme": "cineverse"
+        "androidBundleId": "com.enigma.staging.movies",
+        "iosBundleId": "com.enigma.staging.movies",
+        "webAppDomain": "app.enigma.staging.com",
+        "deepLinkScheme": "enigma"
     },
     "api": {
         "apiBaseUrl": "https://api.themoviedb.org/3",
         "apiVersion": "1",
-        "websocketUrl": "wss://realtime.cineverse.com",
-        "cdnBaseUrl": "https://cdn.cineverse.com",
+        "websocketUrl": "wss://realtime.enigma.com",
+        "cdnBaseUrl": "https://cdn.enigma.com",
         "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
-        "appName": "Cineverse-Staging",
-        "companyName": "Cineverse Studios",
+        "appName": "Enigma-Staging",
+        "companyName": "Enigma Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
         "logoUrl": "logo.png",
         "logoDarkUrl": "logo-dark.png",
-        "supportEmail": "support@cineverse.com",
-        "supportUrl": "https://help.cineverse.com",
-        "privacyPolicyUrl": "https://cineverse.com/privacy",
-        "termsUrl": "https://cineverse.com/terms"
+        "supportEmail": "support@enigma.com",
+        "supportUrl": "https://help.enigma.com",
+        "privacyPolicyUrl": "https://enigma.com/privacy",
+        "termsUrl": "https://enigma.com/terms"
     },
     "stores": {
         "iosAppStoreId": "1234567890",
-        "androidPlayStoreId": "com.cineverse.staging.movies"
+        "androidPlayStoreId": "com.enigma.staging.movies"
     },
     "signingKeys": {
         "ios": {
             "p12": {
-                "fileCredentialId": "prod_cineverse_p12",
-                "passwordCredentialId": "prod_cineverse_p12_password"
+                "fileCredentialId": "prod_enigma_p12",
+                "passwordCredentialId": "prod_enigma_p12_password"
             },
             "mobileprovision": {
-                "fileCredentialId": "prod_cineverse_mobileprovision",
-                "profileName": "Cineverse AdHoc"
+                "fileCredentialId": "prod_enigma_mobileprovision",
+                "profileName": "Enigma AdHoc"
             },
             "codesign": {
                 "teamId": "PHVDJKKN67",
@@ -51,11 +51,11 @@
         },
         "android": {
             "keystore": {
-                "fileCredentialId": "cineverse_android_keystore"
+                "fileCredentialId": "enigma_android_keystore"
             },
-            "alias": "cineverse_release",
-            "keystorePasswordCredentialId": "cineverse_keystore_password",
-            "keyPasswordCredentialId": "cineverse_key_password"
+            "alias": "enigma_release",
+            "keystorePasswordCredentialId": "enigma_keystore_password",
+            "keyPasswordCredentialId": "enigma_key_password"
         }
     }
 }
