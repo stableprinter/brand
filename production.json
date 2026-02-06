@@ -1,42 +1,42 @@
 {
     "identifiers": {
-        "androidBundleId": "com.enigma.movies",
-        "iosBundleId": "com.enigma.movies",
-        "webAppDomain": "app.enigma.com",
-        "deepLinkScheme": "enigma"
+        "androidBundleId": "com.cinemamax.movies",
+        "iosBundleId": "com.cinemamax.movies",
+        "webAppDomain": "app.cinemamax.com",
+        "deepLinkScheme": "cinemamax"
     },
     "api": {
         "apiBaseUrl": "https://api.themoviedb.org/3",
         "apiVersion": "1",
-        "websocketUrl": "wss://realtime.enigma.com",
-        "cdnBaseUrl": "https://cdn.enigma.com",
+        "websocketUrl": "wss://realtime.cinemamax.com",
+        "cdnBaseUrl": "https://cdn.cinemamax.com",
         "imageBaseUrl": "https://image.tmdb.org/t/p/w500"
     },
     "branding": {
-        "appName": "Enigma",
-        "companyName": "Enigma Studios",
+        "appName": "Cinemamax",
+        "companyName": "Cinemamax Studios",
         "primaryColor": "#B91C1C",
         "accentColor": "#D97706",
         "logo": "logo.png",
         "logoDark": "logo-dark.png",
-        "supportEmail": "support@enigma.com",
-        "supportUrl": "https://help.enigma.com",
-        "privacyPolicyUrl": "https://enigma.com/privacy",
-        "termsUrl": "https://enigma.com/terms"
+        "supportEmail": "support@cinemamax.com",
+        "supportUrl": "https://help.cinemamax.com",
+        "privacyPolicyUrl": "https://cinemamax.com/privacy",
+        "termsUrl": "https://cinemamax.com/terms"
     },
     "stores": {
         "iosAppStoreId": "1234567890",
-        "androidPlayStoreId": "com.enigma.movies"
+        "androidPlayStoreId": "com.cinemamax.movies"
     },
     "signingKeys": {
         "ios": {
             "p12": {
-                "fileCredentialId": "prod_enigma_p12",
-                "passwordCredentialId": "prod_enigma_p12_password"
+                "fileCredentialId": "prod_cinemamax_p12",
+                "passwordCredentialId": "prod_cinemamax_p12_password"
             },
             "mobileprovision": {
-                "fileCredentialId": "prod_enigma_mobileprovision",
-                "profileName": "Enigma AdHoc"
+                "fileCredentialId": "prod_cinemamax_mobileprovision",
+                "profileName": "Cinemamax AdHoc"
             },
             "codesign": {
                 "teamId": "PHVDJKKN67",
@@ -51,11 +51,11 @@
         },
         "android": {
             "keystore": {
-                "fileCredentialId": "enigma_android_keystore"
+                "fileCredentialId": "cinemamax_android_keystore"
             },
-            "alias": "enigma_release",
-            "keystorePasswordCredentialId": "enigma_keystore_password",
-            "keyPasswordCredentialId": "enigma_key_password"
+            "alias": "cinemamax_release",
+            "keystorePasswordCredentialId": "cinemamax_keystore_password",
+            "keyPasswordCredentialId": "cinemamax_key_password"
         }
     }
 }
